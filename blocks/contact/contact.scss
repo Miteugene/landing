@@ -1,0 +1,157 @@
+@import "../../scss/main.scss";
+
+.contact {
+  margin: 120px 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  @include mediaMax(1440px) {
+    margin: 70px 20px;
+  }
+
+  @include mediaMax(768px) {
+    margin: 70px 0;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    padding: 60px;
+    box-sizing: border-box;
+
+    background-color: #F8F8F8;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mediaMax(1440px) {
+      padding: 30px 120px;
+    }
+
+    @include mediaMax(768px) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    max-width: 500px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.12;   
+    color: #111111;
+
+    @include mediaMax(1440px) {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 1.19;
+    }
+
+
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    color: rgba(17, 17, 17, 0.6);
+
+    @include mediaMax(1440px) {      
+      margin-top: 24px;
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.33;   
+      color: rgba(17, 17, 17, 0.6);
+
+    }
+  }
+
+  &__form {
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, min-content);
+    grid-gap: 20px 40px;
+
+    @include mediaMax(1440px) {
+      grid-template-columns: 1fr;
+    }
+
+    @include mediaMax(768px) {
+      margin-top: 80px;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0;
+    padding: 15px 20px;
+
+    border-radius: 8px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(17, 17, 17, 0.3);
+
+    @include mediaMax(768px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+
+  &__input:nth-child(3) {    
+    @include mediaMin(1440px) {
+      grid-area: 2 / 1 / span 1 / span 2;
+    }
+
+    height: 130px;
+  }
+
+  &__submit {
+    margin: 0;
+    margin-top: 30px;
+    padding: 15px 30px;
+
+    border-radius: 8px;
+    border: none;
+    background-color: #222222;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    color: rgba(17, 17, 17, 0.6);
+    color: #FFFFFF;
+
+    @include mediaMin(1440px) {
+      align-self: end;
+    }
+
+    @include mediaMax(1440px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+}

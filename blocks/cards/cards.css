@@ -1,0 +1,117 @@
+.cards {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (540px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 540px);
+  -ms-grid-rows: (minmax(min-content, max-content))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(-webkit-min-content, -webkit-max-content));
+      grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  place-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+
+@media (max-width: 1440px) {
+  .cards {
+    -ms-grid-columns: (350px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 350px);
+    margin: 0 20px 0 20px;
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    margin: 0 auto;
+  }
+}
+
+.cards__item {
+  margin: 0;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 540px;
+  height: 308px;
+  border-radius: 20px;
+  background-color: #F8F8F8;
+}
+
+@media (max-width: 1440px) {
+  .cards__item {
+    padding: 30px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards__item {
+    padding: 20px;
+    margin: 0;
+    width: 300px;
+  }
+}
+
+.cards__category {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.11;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+@media (max-width: 1440px) {
+  .cards__category {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+}
+
+.cards__title {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #111111;
+  min-height: 80px;
+  max-width: 460px;
+}
+
+@media (max-width: 1440px) {
+  .cards__title {
+    margin-top: 12px;
+    min-height: 93px;
+    max-width: 290px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.cards__text {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+@media (max-width: 1440px) {
+  .cards__text {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+  }
+}
+/*# sourceMappingURL=cards.css.map */

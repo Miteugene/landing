@@ -1,0 +1,103 @@
+@import "../../scss/main.scss";
+
+.cards {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 540px);
+  grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 20px;
+
+  @include mediaMax(1440px) {
+    grid-template-columns: repeat(auto-fit, 350px);
+    margin: 0 20px 0 20px;
+    grid-gap: 10px;
+  }
+
+  @include mediaMax(768px) {
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+
+    width: 540px;
+    height: 308px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+
+    @include mediaMax(1440px) {
+      padding: 30px;
+      width: 350px;
+    }
+
+    @include mediaMax(768px) {
+      padding: 20px;      
+      margin: 0;
+      width: 300px;
+    }
+  }
+
+  &__category {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+    color: rgba(17, 17, 17, 0.6);
+
+    @include mediaMax(1440px) {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.33;
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 20px;
+    
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.18;   
+    color: #111111;
+
+    min-height: 80px;
+    max-width: 460px;  
+
+    @include mediaMax(1440px) {
+      margin-top: 12px;
+      min-height: 93px;
+      max-width: 290px;
+
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 1.19; 
+    }
+  }
+
+  &__text{
+    margin: 0;
+    margin-top: 40px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44;
+    color: rgba(17, 17, 17, 0.6);
+
+    @include mediaMax(1440px) {
+      margin-top: 50px;
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.33;
+    }
+  }
+}
