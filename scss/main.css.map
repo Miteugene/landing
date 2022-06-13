@@ -3,7 +3,8 @@
     "mappings": "",
     "sources": [
         "main.scss",
-        "_media-mixins.scss"
+        "_media-mixins.scss",
+        "_flush.scss"
     ],
     "names": [],
     "file": "main.css"

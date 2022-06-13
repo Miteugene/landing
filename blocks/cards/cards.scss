@@ -1,17 +1,7 @@
 @import "../../scss/main.scss";
 
 .cards {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 540px);
-  grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
-  place-content: center;
-  justify-items: center;
-  align-items: center;
-  grid-gap: 20px;
+  @include flush-center;
 
   @include mediaMax(1440px) {
     grid-template-columns: repeat(auto-fit, 350px);
@@ -20,13 +10,28 @@
   }
 
   @include mediaMax(768px) {
-    margin: 0 auto;
+    @include flush-center;
+  }
+
+  &__wrapper {
+    @include flush;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 540px);
+    grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+    place-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+
+    @include mediaMax(768px) {
+      @include flush-center;
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
-    margin: 0;
+    @include flush;
     padding: 40px;
-    box-sizing: border-box;
 
     width: 540px;
     height: 308px;
@@ -42,6 +47,10 @@
       padding: 20px;      
       margin: 0;
       width: 300px;
+    }
+
+    &_hidden {
+      display: none;
     }
   }
 
@@ -61,7 +70,7 @@
   }
 
   &__title {
-    margin: 0;
+    @include flush;
     margin-top: 20px;
     
     font-weight: 600;
@@ -84,7 +93,7 @@
   }
 
   &__text{
-    margin: 0;
+    @include flush;
     margin-top: 40px;
 
     font-weight: 400;

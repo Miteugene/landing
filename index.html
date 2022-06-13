@@ -10,31 +10,37 @@
   <div class="page">
     
     <header class="teaser teaser_header">
-      <a class="teaser__link" href="#">
-        <img class="teaser__logo" src="./images/logo.svg" alt="AI Кракозябра">
-      </a>
-      <h1 class="teaser__title teaser__title_header">Не умеете рисовать? Не беда!</h1>
-      <p class="teaser__text teaser__text_header">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>      
-      <img class="teaser__image teaser__image_header" src="./images/screen/screen_header.png" alt="Кракозябра">
-      <button type="button" class="teaser__button teaser__button_header">Подробнее</button>
+      <div class="teaser__wrapper teaser__wrapper_header">
+        <a class="teaser__link" href="#">
+          <img class="teaser__logo" src="./images/logo.svg" alt="AI Кракозябра">
+        </a>
+        <h1 class="teaser__title teaser__title_header">Не умеете рисовать? Не беда!</h1>
+        <p class="teaser__text teaser__text_header">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>      
+        <img class="teaser__image teaser__image_header" src="./images/screen/screen_header.png" alt="Кракозябра">
+        <button type="button" class="teaser__button teaser__button_header">Подробнее</button>
+      </div>      
     </header>
   
     <main class="content">
 
       <section class="cards">
+        <div class="cards__wrapper">
+          <div class="cards__item">
+            <p class="cards__category">AI</p>
+            <h2 class="cards__title">Умный интелект приложения</h2>
+            <p class="cards__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования, и достраивает картину за вас.</p>
+          </div>
 
-        <div class="cards__item">
-          <p class="cards__category">AI</p>
-          <h2 class="cards__title">Умный интелект приложения</h2>
-          <p class="cards__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования, и достраивает картину за вас.</p>
+          <div class="cards__item">
+            <p class="cards__category">Ч/Б и Цвет</p>
+            <h2 class="cards__title">Рисуйте в любом стиле</h2>
+            <p class="cards__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
+          </div>
         </div>
-
-        <div class="cards__item">
-          <p class="cards__category">Ч/Б и Цвет</p>
-          <h2 class="cards__title">Рисуйте в любом стиле</h2>
-          <p class="cards__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
+        <div class="slider">
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
         </div>
-
       </section>
   
       <section class="content__text-box">
@@ -42,25 +48,36 @@
       </section>
   
       <section class="gallery">
-        <img class="gallery__item" src="./images/screen/screen_1.png" alt="Кракозябра">
-        <img class="gallery__item" src="./images/screen/screen_2.png" alt="Кракозябра">
-        <img class="gallery__item" src="./images/screen/screen_3.png" alt="Кракозябра">
+        <div class="gallery__wrapper">
+          <img class="gallery__item" src="./images/screen/screen_1.png" alt="Кракозябра">
+          <img class="gallery__item" src="./images/screen/screen_2.png" alt="Кракозябра">
+          <img class="gallery__item" src="./images/screen/screen_3.png" alt="Кракозябра">
+        </div>
+        <div class="slider">
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
       </section>
-  
+        
       <section class="cards">
+        <div class="cards__wrapper">
+          <div class="cards__item">
+            <p class="cards__category">Быстро</p>
+            <h2 class="cards__title">Проблем с рисованием — нет</h2>
+            <p class="cards__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
+          </div>
 
-        <div class="cards__item">
-          <p class="cards__category">Быстро</p>
-          <h2 class="cards__title">Проблем с рисованием — нет</h2>
-          <p class="cards__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
+          <div class="cards__item">
+            <p class="cards__category">Просто</p>
+            <h2 class="cards__title">Нарисовали, преобразовали, сохранили</h2>
+            <p class="cards__text">Раз, два, три, больше нечего тут рассказать.</p>
+          </div>
         </div>
-
-        <div class="cards__item">
-          <p class="cards__category">Просто</p>
-          <h2 class="cards__title">Нарисовали, преобразовали, сохранили</h2>
-          <p class="cards__text">Раз, два, три, больше нечего тут рассказать.</p>
+        <div class="slider">
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
         </div>
-
       </section>
   
       <section class="content__text-box">
@@ -75,7 +92,7 @@
           <form class="contact__form">
             <input class="contact__input" type="text"     name="name"    placeholder="Ваше имя">
             <input class="contact__input" type="email"    name="email"   placeholder="Контактный Email">
-            <textarea class="contact__input" type="textarea" name="message" placeholder="Сообщение"></textarea>
+            <textarea class="contact__input" name="message" placeholder="Сообщение"></textarea>
           </form>
           <button type="submit" class="contact__submit">Оставить заявку</button>
         </div>
@@ -85,12 +102,16 @@
     </main>
   
     <footer class="teaser teaser_footer">
-      <h1 class="teaser__title teaser__title_footer">Хотите скачать приложение?</h1>
-      <p class="teaser__text teaser__text_footer">Качайте в ЭпСтор и ГуглПлэй.</p>
-      <img class="teaser__image teaser__image_footer" src="./images/screen/screen_footer.png" alt="Кракозябра">
-      <button type="button" class="teaser__button teaser__button_footer">Уже скоро!</button>
+      <div class="teaser__wrapper teaser__wrapper_footer">
+        <h1 class="teaser__title teaser__title_footer">Хотите скачать приложение?</h1>
+        <p class="teaser__text teaser__text_footer">Качайте в ЭпСтор и ГуглПлэй.</p>
+        <img class="teaser__image teaser__image_footer" src="./images/screen/screen_footer.png" alt="Кракозябра">
+        <button type="button" class="teaser__button teaser__button_footer">Уже скоро!</button>
+      </div>
     </footer>
 
   </div>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -1,28 +1,28 @@
 @import "../../scss/main.scss";
 
 .gallery {
-  margin: 120px auto;
-  padding: 0;
-  box-sizing: border-box;
+  @include flush-center;
+  margin-top: 120px;
+  margin-bottom: 120px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
-  grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
-  grid-gap: 25px;
+  &__wrapper {
+    @include flush;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, 350px);
 
-  place-content: center;
-  justify-items: center;
-  align-items: center;
-
-  @include mediaMax(1440px) {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 70px 20px;
-    grid-gap: 15px;
-  }
-
-  @include mediaMax(768px) {
-    grid-template-columns: 1fr;
-    margin-bottom: 94px;
+    @include mediaMax(1440px) {
+      margin: 70px 20px;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fit, 226px);
+    }
+  
+    @include mediaMax(768px) {      
+      margin-bottom: 20px;
+      grid-template-columns: repeat(auto-fit, 260px);
+    }
   }
 
   &__item {
@@ -36,5 +36,10 @@
     @include mediaMax(768px) {
       width: 260px;
     }
+
+    &_hidden {
+      display: none;
+    }
   }
+
 }
