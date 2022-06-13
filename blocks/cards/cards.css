@@ -5,24 +5,6 @@
           box-sizing: border-box;
 }
 
-@media (max-width: 1440px) {
-  .cards {
-    -ms-grid-columns: (350px)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 350px);
-    margin: 0 20px 0 20px;
-    grid-gap: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards {
-    margin: 0 auto;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-}
-
 .cards__wrapper {
   margin: 0;
   padding: 0;
@@ -32,15 +14,20 @@
   display: grid;
   -ms-grid-columns: (540px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 540px);
-  -ms-grid-rows: (minmax(min-content, max-content))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(-webkit-min-content, -webkit-max-content));
-      grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
-  place-content: center;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-gap: 20px;
+}
+
+@media (max-width: 1440px) {
+  .cards__wrapper {
+    -ms-grid-columns: (350px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 350px);
+    margin: 0 20px 0 20px;
+    grid-gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
