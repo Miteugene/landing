@@ -1,0 +1,31 @@
+@import "../../scss/main.scss";
+
+.slider {
+  @include flush;
+  text-align: center;
+  display: none;
+
+  @include mediaMax(768px) {    
+    display: block;
+  }
+
+  &__dot {
+    @include flush;
+    cursor: pointer;
+    border: none;
+    height: 4px;
+    width: 4px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+  
+    &_active {
+      background-color: #212121;
+    }
+  }
+  
+  .__dot:hover {
+    background-color: #212121;
+    opacity: 0.5;
+  }
+}

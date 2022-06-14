@@ -1,0 +1,231 @@
+.contact {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 120px 0;
+}
+
+@media (max-width: 1440px) {
+  .contact {
+    margin: 70px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 70px 0;
+  }
+}
+
+.contact__container {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 60px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .contact__container {
+    padding: 30px 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__container {
+    padding: 20px;
+  }
+}
+
+.contact__title {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.12;
+  color: #111111;
+}
+
+@media (max-width: 1440px) {
+  .contact__title {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.contact__subtitle {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+@media (max-width: 1440px) {
+  .contact__subtitle {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.33;
+    color: rgba(17, 17, 17, 0.6);
+  }
+}
+
+.contact__form {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 100px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (min-content)[auto-fit];
+      grid-template-rows: repeat(auto-fit, -webkit-min-content);
+      grid-template-rows: repeat(auto-fit, min-content);
+  grid-gap: 20px 40px;
+}
+
+@media (max-width: 1440px) {
+  .contact__form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__form {
+    margin-top: 80px;
+  }
+}
+
+.contact__input {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111111;
+}
+
+@media (max-width: 768px) {
+  .contact__input {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.contact__input:-ms-input-placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.contact__input::-ms-input-placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.contact__input::placeholder {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.contact__input:nth-child(3) {
+  height: 130px;
+}
+
+@media (min-width: 1440px) {
+  .contact__input:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+}
+
+.contact__input:hover {
+  cursor: pointer;
+  border: 1px solid #E4E4E4;
+}
+
+.contact__input:focus {
+  cursor: pointer;
+  border: 1px solid #E4E4E4;
+}
+
+.contact__input:active {
+  cursor: pointer;
+  border: 1px solid #E4E4E4;
+}
+
+.contact__submit {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #222222;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(17, 17, 17, 0.6);
+  color: #FFFFFF;
+}
+
+@media (min-width: 1440px) {
+  .contact__submit {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+@media (max-width: 1440px) {
+  .contact__submit {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.contact__submit:active {
+  opacity: 0.85;
+}
+/*# sourceMappingURL=contact.css.map */

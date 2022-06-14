@@ -1,0 +1,171 @@
+@import "../../scss/main.scss";
+
+.contact {
+  @include flush;
+  margin: 120px 0;
+
+  @include mediaMax(1440px) {
+    margin: 70px 20px;
+  }
+
+  @include mediaMax(768px) {
+    margin: 70px 0;
+  }
+
+  &__container {
+    @include flush;
+    padding: 60px;
+
+    background-color: #F8F8F8;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mediaMax(1440px) {
+      padding: 30px 120px;
+    }
+
+    @include mediaMax(768px) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    @include flush;
+
+    max-width: 500px;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.12;   
+    color: #111111;
+
+    @include mediaMax(1440px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+
+  &__subtitle {
+    @include flush;
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    color: rgba(17, 17, 17, 0.6);
+
+    @include mediaMax(1440px) {      
+      margin-top: 24px;
+
+      font-size: 15px;
+      line-height: 1.33;   
+      color: rgba(17, 17, 17, 0.6);
+
+    }
+  }
+
+  &__form {
+    @include flush;
+    margin-top: 100px;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, min-content);
+    grid-gap: 20px 40px;
+
+    @include mediaMax(1440px) {
+      grid-template-columns: 1fr;
+    }
+
+    @include mediaMax(768px) {
+      margin-top: 80px;
+    }
+  }
+
+  &__input {
+    @include flush;
+    padding: 15px 20px;
+
+    border-radius: 8px;
+    border: 1px solid #fff;
+    resize: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+
+    @include mediaMax(768px) {
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+  
+  &__input::placeholder {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &__input:nth-child(3) {    
+    @include mediaMin(1440px) {
+      grid-area: 2 / 1 / span 1 / span 2;
+    }
+    height: 130px;
+  }
+
+  &__input:hover {
+    cursor: pointer;
+    border: 1px solid #E4E4E4;
+  }
+
+  &__input:focus {
+    cursor: pointer;
+    border: 1px solid #E4E4E4;
+  }
+
+  &__input:active {
+    cursor: pointer;
+    border: 1px solid #E4E4E4;
+  }
+
+  &__submit {
+    @include flush;
+
+    margin-top: 30px;
+    padding: 15px 30px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+    border: none;
+    background-color: #222222;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    color: rgba(17, 17, 17, 0.6);
+    color: #FFFFFF;
+
+    @include mediaMin(1440px) {
+      align-self: end;
+    }
+
+    @include mediaMax(1440px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  &__submit:active {    
+    opacity: 0.85;
+  }
+
+}
